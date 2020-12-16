@@ -1,1 +1,1 @@
-# jsmp_q42020
+# JavaScript Mentoring Program 2020Q4
