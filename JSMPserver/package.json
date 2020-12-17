@@ -10,7 +10,8 @@
     "prettier": "npx prettier -w .",
     "ts-lint": "eslint . --ext .{js,ts,tsx}",
     "ts-lint-fix": "eslint . --ext .{js,ts,tsx} --fix",
-    "lint": "npm run prettier && npm run ts-lint"
+    "lint": "npm run prettier && npm run ts-lint",
+    "tdocs": "npx typedoc --ignoreCompilerErrors"
   },
   "husky": {
     "hooks": {
@@ -38,6 +39,8 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.4.2",
     "ts-node": "^9.0.0",
+    "typedoc": "^0.19.2",
+    "typedoc-plugin-markdown": "^3.1.1",
     "typescript": "^4.0.3"
   },
   "dependencies": {
