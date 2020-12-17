@@ -1,0 +1,25 @@
+@import 'roboto.scss';
+body {
+  background-color: #fff1e6;
+  color: #264653;
+}
+#target {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-family: Roboto-Regular, sans-serif;
+}
+h1 {
+  font-size: 24px;
+  font-family: Roboto-Medium, sans-serif;
+  color: #2a9d8f;
+}
+.logo {
+  display: block;
+  background: url('../logo.svg') no-repeat;
+  width: 47px;
+  height: 47px;
+  margin: 0 auto;
+  border: 3px solid #2a9d8f;
+  border-radius: 50%;
+}
