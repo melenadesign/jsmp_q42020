@@ -3,3 +3,6 @@ export default function greetWorld(str = 'Hello, world!'): string {
   console.log(greeting);
   return greeting;
 }
+
+import { ChallengeService } from "./challenge-service";
+export { ChallengeService };
