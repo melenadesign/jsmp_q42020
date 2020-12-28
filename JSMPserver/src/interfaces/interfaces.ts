@@ -21,7 +21,7 @@ export interface Task {
  */
 export interface Achievement extends Task {
   image: string;
-  checkComplete(tasks: TaskStatus[]): AchievementStatus;
+  checkComplete?(tasks: TaskStatus[]): AchievementStatus;
 }
 
 /**
@@ -40,9 +40,10 @@ export interface Challenge {
   id: number;
   state: StateChallenge;
   startDate: Date;
-  tasksOrder: Task[];
-  tasksStatus: ActualTask[];
-  achievementsStatus: AchievementStatus[];
+  tasksOrder: ActualTask[];
+  tasksStatus: Record<number, TaskStatus>;
+  achievementsStatus: Record<string, AchievementStatus>[];
+ //  achievementsStatus: AchievementStatus[];
 }
 
 /**
